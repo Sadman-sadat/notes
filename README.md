@@ -1,16 +1,19 @@
-# notes
+# Notes App
 
-A new Flutter project.
+A Flutter Notes application that allows users to create, edit, delete, and manage notes using Firebase for data storage, GetX for state management, and Go Router for navigation. The app follows a clean project architecture and adheres to standard UI/UX design principles.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User authentication using Firebase
+- Create, read, update, and delete notes
+- Responsive and intuitive UI
+- Efficient state management using GetX
+- Seamless navigation with Go Router
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: Framework for building the app
+- **Firebase**: Backend for user authentication and database
+- **GetX**: State management solution
+- **Go Router**: For navigation management
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
