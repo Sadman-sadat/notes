@@ -18,29 +18,22 @@ class NoteCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
-      child: SizedBox(
-        width: double.infinity,
-        height: 120,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                note.title,
-                style: const TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 16,
-                ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              note.title,
+              style: const TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 16,
               ),
-              const SizedBox(height: 10),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Text(note.description),
-                ),
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 10),
+            Text(note.description),
+          ],
         ),
       ),
     );
